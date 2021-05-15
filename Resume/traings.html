@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="aboutme.css">
+    <link rel="stylesheet" href="trainingss.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <title>Trainings</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+        <!-- Brand/logo -->
+        <a class="navbar-brand" href="index.html">
+          <img src="images/Me_myself.jpeg" alt="logo" style="width:35px;">
+        </a>
+        
+        <!-- Links -->
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item dropdown ml-auto">
+            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">To know more</a>
+            <div class="dropdown-menu dropdown-menu-right">
+                <a href="aboutme.html" class="dropdown-item">About me</a>
+                <a href="Qualification.html" class="dropdown-item">Qualification</a>
+                <a href="knownLanguages.html" class="dropdown-item">Languages I know</a>
+                <a href="traings.html"class="dropdown-item">Trainings</a>
+            </div>
+        </li>
+        </ul>
+      </nav>
+      <div class="contain">
+        <div class="tab">
+          <button class="tablinks" onclick="openCity(event, 'T')" id="defaultOpen">Trainings</button>
+          <button class="tablinks" onclick="openCity(event, 'CA')">Co-curricular<br>Activities</button>
+          <button class="tablinks" onclick="openCity(event, 'A')">Awards</button>
+        </div>
+      
+        <div id="T" class="tabcontent">
+          <h3>Trainings</h3>
+          <div class="table">
+            <span class="border border-dark border-left-0">
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">Online Industrial training on Advanced Telecom Technology at Netaji Subhas Chandra Bose Telecom Training Centre, Kalyani</li>
+                <li class="list-group-item">Online Training on Python Basics and Beyond at <a href="https://github.com/Nullstack-Technologies/Python-Basics-and-Beyond-2021" target="_blank">NullStack Technologies</a> for 10 Days</li>
+                <li class="list-group-item">Training at Internshala on Web Development for 6 weeks.</li> 
+                <li class="list-group-item">Training at Internshala on Ethical Hacking.</li>
+                <li class="list-group-item">Training on Artificial Intelligence at google online course</li>
+              </ul>
+            </span>
+          </div>
+        </div>
+
+        <div id="CA" class="tabcontent">
+          <h3>Co-curricular Activity</h3>
+          <div class="table">
+            <span class="border border-dark border-left-0">
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">Online course of Soft Skill development by NPTEL for 12 weeks.</li>
+                <li class="list-group-item">Online course of Ethics by NPTEL for 8 weeks.</li>
+                <li class="list-group-item">Online course of Joy of computing Python by NPTEL for 12 weeks.</li>
+                <li class="list-group-item">Online course of Microelectronics: Devices to circuits by NPTEL for 12 weeks.</li>
+                <li class="list-group-item">Participated in a workshop on Arduino and Embedded System at WBUT.</li>
+                <li class="list-group-item">Webinar on Entrepreneurship devolopment program</li>
+                <li class="list-group-item">Webinar on 'Introduction to Embedded System'</li>
+                <li class="list-group-item">Course on Learn to Design your on solar home system</li>
+              </ul>
+            </span>
+          </div>
+        </div>
+      
+        <div id="A" class="tabcontent">
+          <h3>Awards</h3>
+          <div class="table">
+            <span class="border border-dark border-left-0">
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">Got first prize on mathematics in class 12 WBCHSE exam.</li>
+                <li class="list-group-item">Won Inter College Football Match in 1st year.</li>
+              </ul>
+            </span>
+          </div>
+        </div>
+      </div>
+      
+      <script>
+        function openCity(evt, cityName) {
+          var i, tabcontent, tablinks;
+          tabcontent = document.getElementsByClassName("tabcontent");
+          for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+          }
+          tablinks = document.getElementsByClassName("tablinks");
+          for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+          }
+          document.getElementById(cityName).style.display = "block";
+          evt.currentTarget.className += " active";
+        }
+
+        // Get the element with id="defaultOpen" and click on it
+        document.getElementById("defaultOpen").click();
+      </script>
+
+</body>
+</html>
